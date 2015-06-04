@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" Id="f17b5fa7-c4bb-461c-b9c7-ccbe7d8cd866" absoluteBounds="0, 0, 11, 8.5" name="ConfigurationSection">
+  <configurationSectionModelMoniker Id="d0ed9acb-0435-4532-afdd-b5115bc4d562" />
+  <nestedChildShapes>
+    <configurationSectionShape Id="468947c9-91ba-4834-8d8d-db51cd2e771c" absoluteBounds="1.75, 0.625, 1.5, 1.4033821614583335" outlineDashStyle="Solid" outlineThickness="0.015625">
+      <configurationSectionMoniker name="/d0ed9acb-0435-4532-afdd-b5115bc4d562/AuthenticationSection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e86d283-9956-4d52-9c7b-358d3193f906" absoluteBounds="1.7650000000000001, 1.0350000000000001, 1.4700000000000002, 0.2493896484375" name="AttributeProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7d17e4cd-fe8f-4154-b3d9-6fe9372d30d6" absoluteBounds="1.7650000000000001, 1.2943896484375, 1.4700000000000002, 0.63399251302083326" name="ElementProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementPropertyHasTypeConnector edgePoints="[(2.5 : 2.02838216145833); (2.5 : 4.35554036458333); (5.625 : 4.35554036458333)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="817738b5-f315-4a74-9d4f-6ec5e726ddef">
+          <relativeChildShapes />
+          <nodes>
+            <configurationSectionShapeMoniker Id="468947c9-91ba-4834-8d8d-db51cd2e771c" />
+            <configurationElementShapeMoniker Id="a728ed72-0cb4-4019-bf15-4024e8288a65" />
+          </nodes>
+        </elementPropertyHasTypeConnector>
+        <elementPropertyHasTypeConnector edgePoints="[(3.25 : 1.32669108072917); (6.375 : 1.32669108072917); (6.375 : 2.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="817738b5-f315-4a74-9d4f-6ec5e726ddef">
+          <relativeChildShapes />
+          <nodes>
+            <configurationSectionShapeMoniker Id="468947c9-91ba-4834-8d8d-db51cd2e771c" />
+            <configurationElementShapeMoniker Id="552de5b1-11b3-4a35-8ca7-5dc2f3b77126" />
+          </nodes>
+        </elementPropertyHasTypeConnector>
+      </nestedChildShapes>
+    </configurationSectionShape>
+    <configurationElementShape Id="552de5b1-11b3-4a35-8ca7-5dc2f3b77126" absoluteBounds="5.625, 2.125, 1.5, 1.211080729166667" outlineDashStyle="Solid" outlineThickness="0.015625">
+      <configurationElementMoniker name="/d0ed9acb-0435-4532-afdd-b5115bc4d562/Username" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f94b2a23-2f84-4920-9e40-dcc80e180163" absoluteBounds="5.64, 2.535, 1.4700000000000002, 0.44169108072916663" name="AttributeProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="ce27755d-ca2e-4907-b9d5-3e47b3aef514" absoluteBounds="5.64, 2.9866910807291669, 1.4700000000000002, 0.2493896484375" name="ElementProperties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </configurationElementShape>
+    <configurationElementShape Id="a728ed72-0cb4-4019-bf15-4024e8288a65" absoluteBounds="5.625, 3.75, 1.5, 1.2110807291666665" outlineDashStyle="Solid" outlineThickness="0.015625">
+      <configurationElementMoniker name="/d0ed9acb-0435-4532-afdd-b5115bc4d562/Password" />
+      <nestedChildShapes>
+        <elementListCompartment Id="818c84b9-e864-4f71-9929-4c6b8b78f488" absoluteBounds="5.64, 4.16, 1.4700000000000002, 0.44169108072916663" name="AttributeProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e6dcf4d3-b4a9-4c31-bd9d-0593297aec6c" absoluteBounds="5.64, 4.6116910807291669, 1.4700000000000002, 0.2493896484375" name="ElementProperties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </configurationElementShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>
