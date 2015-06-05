@@ -58,7 +58,7 @@ namespace Infrastructure
 
         public Container GetContainer()
         {
-            Stream data = _webClient.OpenRead(_settings.Url + "/model");
+            Stream data = _webClient.OpenRead(_settings.Url + "/model?downgrade-permissions");
             StreamReader reader = new StreamReader(data);
             string s = reader.ReadToEnd();
             data.Close();
