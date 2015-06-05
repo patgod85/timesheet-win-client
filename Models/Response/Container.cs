@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace Models
+namespace Models.Response
 {
     public class Container
     {
