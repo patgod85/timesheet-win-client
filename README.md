@@ -5,4 +5,4 @@ Client for quick updating of today's data inside home team.
 
 Example of interface
 
-![client-example](resources/images/client-example.png "client-example")
+![client-example](resources/images/client-screenshot.png "client-example")
