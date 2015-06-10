@@ -29,8 +29,7 @@ namespace Infrastructure
 
             if (_settings.Proxy != "")
             {
-                WebProxy wp = new WebProxy(_settings.Proxy);
-                _webClient.Proxy = wp;
+                _webClient.Proxy = new WebProxy(_settings.Proxy);
             }
 
         }
@@ -41,7 +40,7 @@ namespace Infrastructure
             _webClient.Headers.Add("content-type", "application/json; charset=UTF-8");
         }
 
-        public bool Login()
+        public LoginResult Login()
         {
             SetHeaders();
 
@@ -51,14 +50,12 @@ namespace Infrastructure
 
             string responsebytes = _webClient.UploadString(_settings.Url + "/login", json);
 
-            BooleanResult result = JsonConvert.DeserializeObject<BooleanResult>(responsebytes);
-
-            return result.Success;
+            return JsonConvert.DeserializeObject<LoginResult>(responsebytes);
         }
 
         public Container GetContainer()
         {
-            Stream data = _webClient.OpenRead(_settings.Url + "/model?downgrade-permissions");
+            Stream data = _webClient.OpenRead(_settings.Url + "/model");
             StreamReader reader = new StreamReader(data);
             string s = reader.ReadToEnd();
             data.Close();

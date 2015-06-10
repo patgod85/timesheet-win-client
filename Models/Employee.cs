@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Models
 {
@@ -11,12 +12,16 @@ namespace Models
 
         public string Surname { get; private set; }
 
+        [JsonProperty(PropertyName = "team_code")]
         public string TeamCode { get; private set; }
 
+        [JsonProperty(PropertyName = "team_id")]
         public int TeamId { get; private set; }
 
+        [JsonProperty(PropertyName = "work_start")]
         public string WorkStart { get; private set; }
 
+        [JsonProperty(PropertyName = "work_end")]
         public string WorkEnd { get; private set; }
 
         public Dictionary<string, int> Days { get; private set; }

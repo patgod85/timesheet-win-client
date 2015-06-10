@@ -43,5 +43,12 @@ namespace Infrastructure
             get { return (string)this["proxy"]; }
             set { this["proxy"] = value; }
         }
+
+        [ConfigurationProperty("exportFolder")]
+        public string ExportFolder
+        {
+            get { return (string)this["exportFolder"]; }
+            set { this["exportFolder"] = value; }
+        }
     }
 }

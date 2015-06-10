@@ -91,6 +91,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DayType.datasource" />
     <None Include="Properties\DataSources\Employee.datasource" />
+    <None Include="Properties\DataSources\Models.Team.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,6 +110,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Export\Export.csproj">
+      <Project>{d19388b1-72b1-4e27-9bcd-cd04e335998a}</Project>
+      <Name>Export</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{7E85552A-AF4F-41EC-B77F-7EF7F66FDCF2}</Project>
       <Name>Infrastructure</Name>
