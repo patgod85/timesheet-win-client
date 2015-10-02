@@ -48,14 +48,21 @@ namespace Infrastructure
                 new Login(_settings.Username, _settings.Password) 
             );
 
-            string responsebytes = _webClient.UploadString(_settings.Url + "/login", json);
+            _webClient.UploadString(_settings.Url + "/app/login", json);
 
-            return JsonConvert.DeserializeObject<LoginResult>(responsebytes);
+            Stream data = _webClient.OpenRead(_settings.Url + "/app/whoami");
+
+            StreamReader reader = new StreamReader(data);
+            string s = reader.ReadToEnd();
+            data.Close();
+            reader.Close();
+
+            return JsonConvert.DeserializeObject<LoginResult>(s);
         }
 
         public Container GetContainer()
         {
-            Stream data = _webClient.OpenRead(_settings.Url + "/model");
+            Stream data = _webClient.OpenRead(_settings.Url + "/app/model");
             StreamReader reader = new StreamReader(data);
             string s = reader.ReadToEnd();
             data.Close();
@@ -77,7 +84,7 @@ namespace Infrastructure
                     employee.LastDayType)
             ).ToList();
 
-            string responsebytes = _webClient.UploadString(_settings.Url + "/set-type", JsonConvert.SerializeObject(days));
+            string responsebytes = _webClient.UploadString(_settings.Url + "/app/set-type", JsonConvert.SerializeObject(days));
 
             BooleanResult result = JsonConvert.DeserializeObject<BooleanResult>(responsebytes);
 
